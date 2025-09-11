@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lavender;
+}
+#flask::before {
+  display:inline;
+  content: '';
+  display:inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(./labimages/flask.png);
+  background-size: contain;
+}
+
+#flask {
+  display: flex;
+}
+
+header {
+  display: flex;     
+  /* 이렇게 flex로 header 안에 nav를 감싸야 한 줄 안에 들어감 title과 menu가 들어감.  추가로 login버튼과 register버튼도 같이 감싸야함. */
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding: 2rem 2rem;
+
+
+}
+
+nav {
+  display: flex;
+
+}
+li {
+  display: inline;
+  padding-right: 2rem;
+}
+.small {
+  display: flex;
+  align-content: center;
+
+
+  background-color: rgb(169, 119, 216);
+  border-radius: 4px;
+  size: 1.25rem;
+  font-size: 1.25em;
+  border-color: rgb(169, 119, 216);
+}
+
+.login  {
+  padding-left: 20rem;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  
+  
+
+}
+
+.welcome {
+  font-size: 1.2rem;
+}
+
+.article1 {
+  font-size: 2rem;
+}
+.article2 {
+  font-size: 1.5rem;
+}
+/**/

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslateblue;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;                              /*top left 설정만 하면 조금 아래 왼쪽에 위치함.
+  transform: translate(-50%, -50%);     /* 중앙에 위치하게 할려고 사용 */
+  color: white;
+  text-align: center;
+}
+
+.material-icons {
+  font-size:10rem; 
+}
+
+.lg-text{
+  font-size:2rem;    /* rem쓰는 것이 em보다 나음.. 비율을 일정하게 할 수 잇음 */ 
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sm-text{
+  font-size:1.5rem; 
+} 
+
+#dynamic {
+  position: relative;
+  display: inline-block;
+}
+
+#dynamic::after{  /* after는 dynamic (글자써지는 칸) 바로 옆에 커서 깜빡이는 것 구현하려고 씀 */
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+
+#dynamic.active::after{     /* 커서 깜빡이는 것 표현 */
+  display: none;
+}
