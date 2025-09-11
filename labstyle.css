@@ -24,7 +24,7 @@ body {
 header {
   display: flex;     
   /* 이렇게 flex로 header 안에 nav를 감싸야 한 줄 안에 들어감 title과 menu가 들어감.  추가로 login버튼과 register버튼도 같이 감싸야함. */
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
   padding: 2rem 2rem;
