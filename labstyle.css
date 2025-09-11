@@ -61,11 +61,11 @@ li {
 
 #main {    /* article들과 이미지 포함  */ 
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   padding-left: 20rem;
   padding-top: 3rem;
-  align-items: space-evenly;
-  flex-direction: column;
+  align-items: flex-start;
+  flex-direction: row;
 
 }
 section {    /* article 부분들 + 버튼들 */
@@ -123,11 +123,11 @@ section {    /* article 부분들 + 버튼들 */
 
 .labimage {
   display: flex;
-  justify-content: end;
-  margin-right: 2rem;
+  justify-content: start;
   margin-bottom: 0.5rem;
   flex-direction: row;
-  max-height: 30rem;
-  max-width: 30rem;
+  max-height: 20rem;
+  max-width: 400px;
+  margin-right: 0;
 }
 /**/
