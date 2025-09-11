@@ -59,24 +59,41 @@ li {
   justify-content: end;
 }
 
-#main {
-  display: flex;  
-  justify-content: center;
+#main {    /* article들과 이미지 포함  */ 
+  display: flex;
+  justify-content: start;
+  padding-left: 20rem;
+  padding-top: 3rem;
+  align-items: space-evenly;
   flex-direction: column;
-  
-  
 
 }
+section {    /* article 부분들 + 버튼들 */
+  display: flex;
+
+
+}
+
+
 
 .welcome {
   font-size: 1.2rem;
+  color: rgb(153, 66, 190);
 }
 
 .article1 {
+  padding-top: 1.5rem;
   font-size: 2rem;
+  max-width: 30rem;
+  color: rgb(204, 121, 197);
+  font-weight: 800;
 }
 .article2 {
+  padding-top: 1.5rem;
   font-size: 1.5rem;
+  max-width: 30rem;
+  padding-bottom: 1.5rem;
+  
 }
 
 .big {
@@ -91,11 +108,26 @@ li {
   font-size: 1.4em;
   border-color: rgb(169, 119, 216);
 }
+.explore {
+  display: flex;
+  padding-left: 20rem;
+
+
+}
+.watchvideo {
+  display: flex;
+  padding-left: 20rem;
+
+}
+
 
 .labimage {
   display: flex;
   justify-content: end;
   margin-right: 2rem;
   margin-bottom: 0.5rem;
+  flex-direction: row;
+  max-height: 30rem;
+  max-width: 30rem;
 }
 /**/
